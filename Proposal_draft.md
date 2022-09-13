@@ -25,7 +25,7 @@ To solve the first task one should minimize the logistic loss for training examp
 
 The data for training and testing can be a synthetic data set that can generate as many as samples that are required. For example, one can build a data generator that creates noisy pictures including random parallelograms with random sides. This data set generator should be established in a way that the percentage of pictures with no objects can be set before generating the data.
 
-#### How can we measure the accuracy of the model?
+### How can we measure the accuracy of the model?
 
 For examining the accuracy of the algorithm we need to consider two things separately. First, the Accuracy, Precision, Recall and F1-Score of the binary classifier that is responsible for object detection. Second we need to examine the accuracy of the object localization. To do that we need to consider Intersection over Union (IoU) which is an evaluation metric used to measure the accuracy of an object detector.
 
