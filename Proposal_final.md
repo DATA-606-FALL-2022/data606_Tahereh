@@ -23,7 +23,19 @@ To solve the first task one should minimize the logistic loss for training examp
 
 ### Data
 
-The data for training and testing can be a synthetic data set that can generate as many as samples that are required. For example, one can build a data generator that creates noisy pictures including random parallelograms with random sides. This data set generator should be established in a way that the percentage of pictures with no objects can be set before generating the data.
+The data for training and testing will be a synthetic data set that can generate as many as samples that are required.
+
+Objects that are to be detected are all parallelograms with random sides at a random position in an image which is contaminated with noise. To generate such parallelograms I do the following:
+
+1. Denote (1,0), (0,1), (-1,0), and (0,-1) on the 2D plane.
+2. Rotate both (1,0) and (-1,0) with a random degree clockwise using a rotation matrix.
+3. Do the same rotation process for (0,1) and (0,-1). (step 2 and 3 guarantee that diagonals are not perpendicular to each other. Otherwise, we get a rhombus instead of parallelograms.)
+4. Once we have all four corners we stretch x-values and y-values to get a bigger parallelogram that fits in the image size.
+5. Randomly rotate the parallelogram clockwise to make sure its rotation is random. 
+6. Translate the center of parallelogram from (0,0) to a new random center. 
+7. Fill all the points on the sides of the parallelogram and put it on a noisy picture. 
+
+For the data I save the image and for the label, I save the center, rotation and stretch values. In an IPython notebook file I have implemented all the above processes that generate a picture that has a parallelogram in it. I will use this code to create however many samples that are needed for my project.
 
 ### How can we measure the accuracy of the model?
 
