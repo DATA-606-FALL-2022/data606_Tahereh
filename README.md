@@ -2,7 +2,15 @@
 
 ## Project Descreption
  
-Object detection is a task that determines whether there is a specific object in an image or not. On the other hand, object localization draws a bounding box around the object of interest in the image.
+Object detection and localization have a lot of applications in different areas such as self-driving cars, video surveillance, and climate change. For example, autonomous vehicles rely on the perception of their surroundings to ensure safe and robust driving performance. This perception system uses object detection algorithms to accurately determine objects such as pedestrians, vehicles, traffic signs, and barriers in the vehicle's vicinity. 
+
+To explore the task of object detection and localization I generated 10,000 images whose sizes are 64x64. Inside of each image there are at most 3 objects with nine different classes. The size of each object and the position is random.
+
+Data processing for training the deep neural network is standardization using mean subtraction and division by standard deviation.
+I use DenseNet which is a convolutional neural network. The benefit of using DenseNet is that for each layer, the feature-maps of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers.
+To train the model I considered 100 epochs and I use minibatch size of 64. For the optimizer I use Adam optimizer with a learning rate of 0.001.
+
+
 
 
 ## Code
