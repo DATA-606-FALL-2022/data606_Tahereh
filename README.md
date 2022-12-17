@@ -23,3 +23,4 @@ The data for the project is a synthetic dataset which is obtained by running [th
 ## Presentation
 - The video associated with the presentation is on YouTube and can be found [here](https://youtu.be/MDEWD0ut4Sc).
 - The presentation is provided in two formats, a pdf file that can be found [here](https://github.com/DATA-606-FALL-2022/data606_Tahereh/blob/main/presentation/Presentation_Capstone606_Tahereh_Hematian.pdf) and a power point file which can be downloaded from [here](https://github.com/DATA-606-FALL-2022/data606_Tahereh/blob/main/presentation/Presentation_Capstone606_Tahereh_Hematian%20(2).pptx). Both of these files are in [the presentation folder](https://github.com/DATA-606-FALL-2022/data606_Tahereh/tree/main/presentation).
+The files can also be found from [data folder](https://github.com/DATA-606-FALL-2022/data606_Tahereh/tree/main/data).
